@@ -23,7 +23,7 @@ public class Lesson {
 
         ArrayList<Lesson> LessonList=new ArrayList<>();
 
-        String[] Lessons={"Mobil Programlama","İnternet Programcılığı","Görsel Programlama","Robotik Kodlama","Dijital Pazarlama","Veri Tabanı","Grafik Animasyon","Mobil Programlama II"};
+        String[] Lessons={"Mobil Programlama","İnternet Programcılığı","Görsel Programlama"};
 
         for(int i=0;i<Lessons.length;i++){
 

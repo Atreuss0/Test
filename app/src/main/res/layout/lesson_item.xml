@@ -9,17 +9,21 @@
     <androidx.cardview.widget.CardView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        app:cardBackgroundColor="@android:color/white"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent">
 
+
         <androidx.constraintlayout.widget.ConstraintLayout
             android:layout_width="match_parent"
-            android:layout_height="match_parent">
+            android:layout_height="match_parent"
+            android:background="@drawable/shadow_2347">
+
 
             <Button
                 android:id="@+id/btn_attendance"
-                android:layout_width="146dp"
-                android:layout_height="69dp"
+                android:layout_width="122dp"
+                android:layout_height="59dp"
                 android:layout_marginTop="8dp"
                 android:layout_marginEnd="16dp"
                 android:layout_marginBottom="8dp"
@@ -27,28 +31,43 @@
                 app:cornerRadius="30dp"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintTop_toTopOf="parent"
-                app:layout_constraintVertical_bias="0.0" />
+                app:layout_constraintTop_toTopOf="parent" />
 
             <TextView
                 android:id="@+id/StudentName"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginStart="100dp"
+                android:layout_marginStart="50dp"
                 android:layout_marginTop="33dp"
-                android:layout_marginEnd="120dp"
+                android:layout_marginEnd="20dp"
                 android:layout_marginBottom="33dp"
-                android:fontFamily="serif"
+                android:fontFamily="sans-serif-condensed-medium"
                 android:text="TextView"
                 android:textAlignment="center"
                 android:textAllCaps="false"
-                android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                android:textAppearance="@style/TextAppearance.AppCompat.Large"
                 android:textSize="16sp"
                 android:textStyle="bold|italic"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toStartOf="@+id/btn_attendance"
+                app:layout_constraintHorizontal_bias="0.707"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="parent" />
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.0" />
+
+            <ImageView
+                android:id="@+id/imageView"
+                android:layout_width="36dp"
+                android:layout_height="30dp"
+                android:layout_marginTop="31dp"
+                android:layout_marginBottom="27dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.077"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.0"
+                app:srcCompat="@drawable/ic_round_menu_book_24" />
 
         </androidx.constraintlayout.widget.ConstraintLayout>
     </androidx.cardview.widget.CardView>
